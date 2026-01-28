@@ -202,7 +202,7 @@ nav a:hover, nav a.active {
     display: block;
     background: var(--primary);
     color: white;
-    font-size: 24px;
+    font-size: 22px;
     border: none;
     padding: 6px 12px;
     border-radius: 6px;

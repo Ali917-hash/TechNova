@@ -1,9 +1,31 @@
-const menuBtn = document.getElementById('menu-btn');
+// /* Mobile Menu Toggle */
+document.addEventListener('DOMContentLoaded', () => {
+  const menuBtn = document.getElementById('menu-btn');
   const navLinks = document.getElementById('nav-links');
 
-  menuBtn.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
+  if (menuBtn && navLinks) {
+    // 1. Toggle Menu on Button Click
+    menuBtn.addEventListener('click', (e) => {
+      e.preventDefault(); // Stop any default button behavior
+      navLinks.classList.toggle('active');
+      
+      // Optional: Change icon from ☰ to X
+      if (navLinks.classList.contains('active')) {
+          menuBtn.innerHTML = '✕'; // Show X
+      } else {
+          menuBtn.innerHTML = '&#9776;'; // Show Hamburger
+      }
+    });
+
+    // 2. Close menu when a link is clicked (Good UX)
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        menuBtn.innerHTML = '&#9776;'; // Reset icon to Hamburger
+      });
+    });
+  }
+});
 
   document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();

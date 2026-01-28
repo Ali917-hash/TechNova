@@ -84,14 +84,6 @@ header{
   box-shadow: 0 4px 10px rgba(30,123,230,0.15);
 }
 
-nav ul {
-  list-style:none;
-  margin:0;
-  padding:0;
-  display:flex;
-  gap:18px;
-  align-items:center
-}
 nav a {
   color:var(--dark);
   text-decoration:none;
@@ -172,24 +164,7 @@ nav a.active {
     Responsive Humburger Menu Of Navbar
    ===================================== */
 
-.mobile-menu-btn {
-  display: none;
-}
-
-@media (max-width: 680px) {
-  .hero-btns {
-    flex-direction: column; 
-    align-items: center;
-  }
-  .hero {
-    width: 80%; 
-  }
-  .p-card {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Mobile Menu Button */
+/* Mobile Menu Button - Hidden by default */
 .mobile-menu-btn {
   display: none;
   background: var(--primary);
@@ -199,63 +174,79 @@ nav a.active {
   padding: 6px 12px;
   border-radius: 6px;
   cursor: pointer;
+  transition: var(--transition);
 }
 
-/* Show on mobile */
 @media (max-width: 680px) {
   .mobile-menu-btn {
     display: block;
   }
   nav ul {
-    display: none;
+   display: none; /* Hidden default */
     flex-direction: column;
-    gap: 12px;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
     background: white;
     padding: 20px;
-    margin-top: 10px;
-    border-radius: 15px;
-    box-shadow: var(--card-shadow);
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    text-align: center;
   }
   nav ul.active {
     display: flex;
   }
+   .cta-btn { 
+    display: none; 
+  } 
 }
 
-.mobile-menu-btn {
-  display: none;
-  background: blue;
-  border: none;
-  font-size: 28px;
-  cursor: pointer;
-  color: var(--white);
-  border-radius: 5px;
+/* Desktop Navigation */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 18px;
+  align-items: center;
 }
 
-/* Tablet & Mobile Styles */
+/* Mobile & Tablet Styles */
 @media (max-width: 768px) {
-
   .mobile-menu-btn {
-    display: block; 
+    display: block;
   }
 
   nav ul {
-    display: none; 
+    display: none;
     flex-direction: column;
     position: absolute;
-    top: 100%; 
+    top: 100%;
     left: 0;
-    width: 100%;
+    right: 0;
     background: var(--white);
     padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    gap: 15px;
-    color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    gap: 12px;
+    z-index: 99;
   }
 
   nav ul.active {
     display: flex;
   }
+
+  nav ul a {
+    display: block;
+    padding: 10px 0;
+    color: var(--dark);
+  }
+
+  .cta-btn {
+    display: none;
+  }
+}
 
   .cta-btn {
     display: none;
@@ -274,7 +265,7 @@ nav a.active {
   .hero .hero-cta {
     justify-content: center;
   }
-}
+
 
 @media (max-width: 680px) {
     .hero .cta-btn {

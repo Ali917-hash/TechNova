@@ -532,9 +532,8 @@ hr {
     left: 0;
     width: 100%;
     background: var(--white);
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    gap: 15px;
     color: var(--white);
     border-radius: 10px;
   }
@@ -543,4 +542,29 @@ hr {
     margin: 2px 0;
     text-align: center;
   }
+}
+
+@media (max-width: 680px) {
+  .mobile-menu-btn {
+    display: block;
+  }
+  nav ul {
+   display: none; /* Hidden default */
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  nav ul.active {
+    display: flex;
+  }
+   .cta-btn { 
+    display: none; 
+  } 
 }
