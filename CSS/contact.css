@@ -1,0 +1,594 @@
+:root{
+      --bg: #f7f8fb;
+      --white: #ffffff;
+      --dark: #0f1720;
+      --muted: #6b7280;
+      --primary: #1e7be6;
+      --card-shadow: 0 8px 20px rgba(15,23,32,0.06);
+      --radius: 10px;
+    }
+
+    * {
+        box-sizing: border-box
+    }
+
+    html, body {
+        height: 100%
+    }
+
+    body{
+      margin:0;
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color: var(--dark);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height:1.45;
+    }
+
+      /* Container */
+    .container{
+      width: min(1100px, 92%);
+      margin: 0 auto;
+    }
+
+    /* NAVBAR */
+    header{
+      background:var(--white);
+      position:sticky;
+      top:0;
+      z-index:100;
+      box-shadow: 0 2px 8px rgba(15,23,32,0.04);
+    }
+    .nav {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+      padding:14px 0;
+      position: fixed;
+      position: sticky;
+      top: 0;
+    }
+
+    .brand {
+        display:flex;
+        align-items:center;
+        gap:12px;
+        font-weight:700;
+        font-size:20px;
+        color:var(--dark)
+    }
+
+    .brand .logo {
+      width: 40px;
+      height: 40px;
+      background: var(--primary);
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 700;
+      box-shadow: 0 4px 10px rgba(30,123,230,0.15);
+    }
+
+    nav ul {
+        list-style:none;
+        margin:0;
+        padding:0;
+        display:flex;
+        gap:18px;
+        align-items:center
+    }
+    nav a {
+        color:var(--dark);
+        text-decoration:none;
+        font-weight:500
+    }
+    nav a.active { color: #6238f8; }
+    .cta-btn {
+      background:var(--primary); 
+      color:white; 
+      padding:10px 14px; 
+      border-radius:8px; 
+      text-decoration:none; 
+      font-weight:600;
+      box-shadow: 0 6px 18px rgba(30,123,230,0.12);
+    }
+
+    .cta-btn:hover {
+        transform:translateY(-2px)
+    }
+
+    /* HERO */
+    .hero{
+      background-image: linear-gradient(rgba(4,12,20,0.55), rgba(4,12,20,0.55)), url('../Assets/contact2.jpg');
+      background-size:cover;
+      background-position:center right;
+      color:white;
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      padding: 80px 0;
+    } 
+
+    .hero .hero-inner {
+        display:flex;
+        align-items:center;
+        gap:32px;
+        min-height:400px
+    }
+
+    .hero h1 {
+        font-size:44px;
+        font-weight: bold;
+        margin:0 0 18px;
+        line-height:1.05;
+        letter-spacing:0.6px
+    }
+    .hero span {
+      color: var(--primary);
+    }
+    .hero p {
+        margin:0 0 22px;
+        color:rgba(255,255,255,0.85);
+        font-size:16px
+    }
+
+    .hero .hero-cta {
+        display:flex;
+        gap:12px;
+        align-items:center
+    }
+    .hero .hero-cta .btn {
+        background:var(--primary);
+        color:white;
+        padding:12px 20px;
+        border-radius:8px;
+        text-decoration:none;
+        font-weight:600;
+        box-shadow: 0 6px 18px rgba(30,123,230,0.12);
+    }
+
+    @media (max-width: 768px) {
+  .hero {
+    min-height: 60vh;            /* Slightly shorter on mobile */
+    text-align: center;          /* Centers text for a cleaner mobile look */
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 300px) {
+  .hero {
+    min-height: 60vh;            /* Slightly shorter on mobile */
+    text-align: center;          /* Centers text for a cleaner mobile look */
+    padding: 60px 0;
+  }
+  
+  .hero-inner {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+    /* --- INFO CARDS SECTION --- */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 20px; /* Overlap effect creates depth */
+  position: relative;
+  z-index: 10;
+}
+
+.info-card {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.info-card .icon-box {
+  width: 60px;
+  height: 60px;
+  background: rgba(30,123,230,0.1); /* Light primary color */
+  color: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin: 0 auto 18px;
+}
+
+.info-card h3 {
+  font-size: 18px;
+  margin: 0 0 10px;
+  color: var(--dark);
+}
+
+.info-card p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+ /* SECTIONS */
+section {
+  padding: 40px 0
+}
+
+.container h2 {
+  text-align: center;
+  font-size: 36px;
+  margin: 0 0 28px;
+  letter-spacing: 0.6px;
+}
+
+/*  CONTACT CARD / FORM  */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* Form Styles */
+.contact-form-container {
+    flex: 2;
+    min-width: 300px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+
+}
+
+.contact-form-container h2, .contact-info-container h2 {
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #003366;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #4807df;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.send-btn {
+    background-color: #0056b3;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.send-btn:hover {
+    background-color: #003d80;
+}
+
+/* Info Styles */
+.contact-info-container {
+    flex: 1;
+    min-width: 300px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.info-item {
+    display: flex;
+    margin-bottom: 25px;
+    align-items: flex-start;
+}
+
+.info-item .icon {
+    color: #0056b3;
+    font-size: 20px;
+    margin-right: 15px;
+    width: 30px;
+}
+
+.info-item strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.info-item p {
+    color: #666;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+/* Questions FAQ */
+
+.faq-section {
+    width: 100%;
+}
+
+.faq-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    color: #001a33; /* Dark navy color from image */
+    margin-bottom: 40px;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between cards */
+    justify-content: center;
+    align-items: center;
+    /* padding: 0 5rem 0 5rem; */
+}
+
+.faq-card {
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    /* Subtle shadow to match the "soft" look in the image */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f0f0f0;
+    transition: transform 0.2s ease;
+    width: 80%;
+}
+
+.faq-card:hover {
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.faq-card h3 {
+    font-size: 18px;
+    color: #001a33;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.faq-card p {
+    font-size: 15px;
+    color: #555555; /* Soft gray for the answer text */
+    line-height: 1.6;
+}
+
+/* ============================
+   7. MAIN FOOTER STYLES
+   ============================ */
+   
+.main-footer {
+  background-color: #0b1120; /* Dark navy from image */
+  color: #cbd5e1;
+  padding: 60px 0 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.5fr; /* 3 columns */
+  gap: 40px;
+  border-bottom: 1px solid #1e293b;
+  padding-bottom: 40px;
+}
+
+.footer-col h3.footer-logo {
+  color: #3b82f6; /* Blue logo text */
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.footer-col h4 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 1.2rem;
+}
+
+.footer-col p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #3b82f6;
+  padding-left: 5px;
+}
+
+/* Social Icons */
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #3b82f6;
+}
+
+/* Contact Items */
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.contact-item i {
+  color: #3b82f6;
+  margin-top: 5px;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+/* --- Responsive Adjustments --- */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr; /* Stack all columns */
+    text-align: center;
+  }
+  
+  .social-links, .contact-item {
+    justify-content: center;
+  }
+  
+  .cta-section h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 980px) {
+    .hero .cta-btn {
+        display: inline-block !important; 
+    }
+}
+/* For Tablets and Mobile (Max 768px) */
+@media (max-width: 768px) {
+    .hero-cta {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero-cta .cta-btn {
+        width: 80%; /* Make buttons wider for easier thumb-tapping */
+        text-align: center;
+    }
+    .hero .cta-btn {
+        display: inline-block !important; /* Ensures hero buttons stay visible */
+    }
+}
+
+@media (max-width: 680px) {
+    .hero .cta-btn {
+        display: inline-block !important; 
+    }
+}
+
+/* --- RESPONSIVE NAVIGATION & LAYOUT --- */
+
+/* Hide Hamburger on Desktop */
+.mobile-menu-btn {
+  display: none;
+  background: blue;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--white);
+  border-radius: 5px;
+}
+
+/* Tablet & Mobile Styles */
+@media (max-width: 768px) {
+  
+  /* 1. Navbar Adjustments */
+  .mobile-menu-btn {
+    display: block; /* Show hamburger */
+  }
+
+  /* Hide the desktop menu by default */
+  nav ul {
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Push below header */
+    left: 0;
+    width: 100%;
+    background: var(--white);
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    gap: 15px;
+    color: var(--white);
+    border-radius: 10px;
+  }
+
+  /* The class '.active' is added by JS to show the menu */
+  nav ul.active {
+    display: flex;
+  }
+
+  .cta-btn {
+    display: none; /* Optional: hide CTA on small mobile to save space */
+  }
+
+  /* 2. Hero Text Adjustment */
+  .hero h1 {
+    font-size: 32px; /* Smaller font for mobile */
+  }
+  
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 40px;
+  }
+  
+  .hero .hero-cta {
+    justify-content: center;
+  }
+
+  /* 3. Contact Form Responsiveness */
+  .contact-grid {
+    flex-direction: column;
+  }
+  
+  .contact-grid .field {
+    flex: 1 1 100%; /* Force full width */
+  }
+}

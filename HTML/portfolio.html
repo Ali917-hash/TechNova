@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | TECHNOVA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../Assets/circle-cropped.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/portfolio.css">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <span class="logo">T</span>
+        <span>TECHNOVA</span>
+      </div>
+
+      <nav>
+        <button id="menu-btn" class="mobile-menu-btn" onclick="toggleMenu()">☰</button> 
+        <ul id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About1.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a class="cta-btn" href="contact.html">Get Started</a>
+    </div>
+  </header>
+
+ <!-- =================
+        Hero Section    
+      ================= --> 
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <!-- left: text -->
+      <div class="hero-text">
+        <h1><span>Showcasing</span><br/>Digital Excellence</h1>
+        <p>Explore my latest projects, from responsive web applications to interactive user experiences. <br>Each project represents a unique challenge solved with clean code.</p>
+        <div class="hero-cta">
+          <a class="cta-btn" href="#portfolio">View Projects</a>
+          <a class="cta-btn secondary" href="contact.html">Get Started</a>
+        </div>
+      </div>
+
+      <!-- right: decorative (image is background) -->
+      <div class="hero-decorative"></div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title" id="portfolio">Success Stories</h2>
+    <div class="stories-grid">
+      <div class="story-card">
+        <img src="../Assets/Web-developer.avif" alt="Alex Thompson" class="story-image">
+        <div class="story-content">
+          <div class="category-tag">
+            <i class="fas fa-laptop-code"></i> Web Development Bootcamp
+          </div>
+          <h3 class="student-name">Alex Thompson</h3>
+          <p class="student-role">Full Stack Developer at Google</p>
+          <p class="quote">"TechNova transformed my career. From zero coding knowledge to landing my dream job at Google!"</p>
+        </div>
+      </div>
+
+      <div class="story-card">
+        <img src="../Assets/cloudcomputing.jpg" alt="Maria Garcia" class="story-image">
+        <div class="story-content">
+          <div class="category-tag">
+            <i class="fas fa-cloud"></i> Cloud Computing Certification
+          </div>
+          <h3 class="student-name">Maria Garcia</h3>
+          <p class="student-role">Cloud Solutions Architect at AWS</p>
+          <p class="quote">"The hands-on projects and expert mentorship at TechNova prepared me perfectly for the industry."</p>
+        </div>
+      </div>
+
+      <div class="story-card">
+        <img src="../Assets/cyber-group.avif" alt="David Lee" class="story-image">
+        <div class="story-content">
+          <div class="category-tag">
+            <i class="fas fa-shield-alt"></i> Advanced Cybersecurity
+          </div>
+          <h3 class="student-name">David Lee</h3>
+          <p class="student-role">Cybersecurity Specialist at Microsoft</p>
+          <p class="quote">"The comprehensive curriculum and real-world scenarios made all the difference in my career."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Student Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div>
+          <div class="project-header">
+            <span class="project-category">Web Development</span>
+            <a href="#" class="external-link" title="View project"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <h3 class="project-title">E-Commerce Platform</h3>
+          <p class="project-desc">Full-stack online shopping platform with payment integration.</p>
+        </div>
+        <div class="tech-stack">
+          <span class="tech-pill">React</span>
+          <span class="tech-pill">Node.js</span>
+          <span class="tech-pill">Stripe</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div>
+          <div class="project-header">
+            <span class="project-category">Mobile App</span>
+            <a href="#" class="external-link" title="View project"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <h3 class="project-title">Mobile Banking App</h3>
+          <p class="project-desc">Secure mobile application for financial transactions.</p>
+        </div>
+        <div class="tech-stack">
+          <span class="tech-pill">React Native</span>
+          <span class="tech-pill">Firebase</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div>
+          <div class="project-header">
+            <span class="project-category">AI & ML</span>
+            <a href="#" class="external-link" title="View project"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+          <h3 class="project-title">AI Chatbot</h3>
+          <p class="project-desc">Intelligent customer service chatbot using NLP techniques.</p>
+          </div>
+          <div class="tech-stack">
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">TensorFlow</span>
+            <span class="tech-pill">Flask</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div>
+            <div class="project-header">
+              <span class="project-category">Cloud Ops</span>
+              <a href="#" class="external-link" title="View project"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+            <h3 class="project-title">Cloud Infrastructure</h3>
+            <p class="project-desc">Scalable cloud architecture for enterprise applications.</p>
+          </div>
+          <div class="tech-stack">
+            <span class="tech-pill">AWS</span>
+            <span class="tech-pill">Docker</span>
+            <span class="tech-pill">K8s</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div>
+            <div class="project-header">
+              <span class="project-category">Data Science</span>
+              <a href="#" class="external-link" title="View project"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+            <h3 class="project-title">Analytics Dashboard</h3>
+            <p class="project-desc">Real-time data visualization and analytics platform.</p>
+          </div>
+          <div class="tech-stack">
+            <span class="tech-pill">D3.js</span>
+            <span class="tech-pill">Postgres</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div>
+            <div class="project-header">
+              <span class="project-category">Cybersecurity</span>
+              <a href="#" class="external-link" title="View project"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+            <h3 class="project-title">Threat Monitor</h3>
+            <p class="project-desc">Network security monitoring and threat detection system.</p>
+          </div>
+          <div class="tech-stack">
+            <span class="tech-pill">Splunk</span>
+            <span class="tech-pill">Python</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section class="impact-section">
+    <h2 class="section-title">Our Impact</h2>
+    <div class="impact-grid">
+      <div class="impact-item">
+        <div class="impact-number">500+</div>
+        <div class="impact-label">Projects Completed</div>
+      </div>
+      <div class="impact-item">
+        <div class="impact-number">95%</div>
+        <div class="impact-label">Job Placement Rate</div>
+      </div>
+      <div class="impact-item">
+        <div class="impact-number">150+</div>
+        <div class="impact-label">Hiring Partners</div>
+      </div>
+      <div class="impact-item">
+        <div class="impact-number">$80k</div>
+        <div class="impact-label">Average Starting Salary</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Be Our Next Success Story</h2>
+    <p>Join TechNova and start building your portfolio today</p>
+    <a href="contact.html" class="cta-btn1">Start Learning</a>
+  </section>
+
+ <!-- ====================
+        Standard Footer
+      ==================== -->
+<footer class="main-footer">
+  <div class="container footer-grid">
+    
+    <div class="footer-col">
+      <h3 class="footer-logo">TechNova</h3>
+      <p>Empowering the next generation of IT professionals with cutting-edge courses and hands-on training.</p>
+      <div class="social-links">
+        <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="About1.html">About Us</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact Info</h4>
+      <div class="contact-item">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>Govt. Graduate College, Sahiwal</span>
+      </div>
+      <div class="contact-item">
+        <i class="fa-solid fa-phone"></i>
+        <span>+92 301 4823746</span>
+      </div>
+      <div class="contact-item">
+        <i class="fa-solid fa-envelope"></i>
+        <span>ali@ggcs.edu.pk</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 TechNova. All rights reserved.</p>
+  </div>
+</footer>
+<script src="../JS/portfolio.js"></script>
+</body>
+</html>

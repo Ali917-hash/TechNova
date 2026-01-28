@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechNova — Our Services</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../Assets/circle-cropped.png" type="image/x-icon">
+  <link rel="stylesheet" href="../CSS/service.css" />
+</head>
+
+<body>
+
+<!-- HEADER -->
+ <header>
+    <div class="container nav">
+      <div class="brand">
+        <span class="logo">T</span>
+        <span>TECHNOVA</span>
+      </div>
+
+      <nav>
+        <button id="menu-btn" class="mobile-menu-btn">☰</button>
+        <ul id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About1.html">About Us</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a class="cta-btn" href="contact.html">Get Started</a>
+    </div>
+  </header>
+
+
+<!-- HERO -->
+<section class="hero hero-service" id="home">
+    <div class="container hero-inner">
+      <!-- left: text -->
+      <div style="max-width:700px">
+        <h1><span>Digital Excellence</span> <br>Tailored to Scale Your Ambition.</h1>
+        <p>Whether you are a startup looking to make your mark or an enterprise aiming to optimize global operations, our suite of services is built for impact. From custom web ecosystems and high-performance mobile apps to cutting-edge AI integration, we provide the technical backbone your business needs to outperform the competition. Your vision is the blueprint; our expertise is the engine.</p>
+        <div class="hero-cta">
+          <a class="cta-btn" href="contact.html">Get Started</a>
+        </div>
+      </div>
+
+      <!-- right: decorative (image is background) -->
+      <div style="flex:1"></div>
+    </div>
+  </section>
+
+
+<!-- FILTER BUTTONS -->
+<div class="container">
+  <div class="service-filters">
+    <button data-filter="all" class="filter-btn active">All</button>
+    <button data-filter="web" class="filter-btn">Web</button>
+    <button data-filter="mobile" class="filter-btn">Mobile</button>
+    <button data-filter="ai" class="filter-btn">AI</button>
+    <button data-filter="security" class="filter-btn">Security</button>
+    <button data-filter="cloud" class="filter-btn">Cloud</button>
+    <button data-filter="language" class="filter-btn">Language</button>
+    <button data-filter="design" class="filter-btn">Design</button>
+    <button data-filter="analytics" class="filter-btn">Analysis</button>
+  </div>
+</div>
+
+
+<!-- SERVICES GRID -->
+    <section class="services" id="services">
+        <div class="service-container">
+            <h2>Our Services</h2><br>
+            <div class="service-grid">
+                <div class="service-card" data-category="web">
+                <i class="fa-solid fa-laptop-code"></i>
+                    <h4>Web Development</h4>
+                    <p>Modern responsive websites and web apps build with best practices.</p>
+                    <button onclick="openService('Web Development', 'We build high-performance, responsive websites using the latest technologies like React and Node.js.')">
+                      Learn More
+                    </button>
+                </div>
+                <div class="service-card" data-category="mobile">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <h4>App Development</h4>
+                    <p>Cross-platform mobile apps and native experiences for iOS & Android.</p>
+                    <button onclick="openService('App Development', 'We build high-performance, responsive websites using the latest technologies like React and Node.js.')">
+                      Learn More
+                    </button>
+                </div>
+                <div class="service-card" data-category="cloud">
+                    <i class="fa-regular fa-cloud"></i>
+                    <h4>Cloud Solutions</h4>
+                    <p>Deployment, scaling and cloud architecture for reliable systems.</p>
+                    <button onclick="openService('Cloud Solutions', 'We build high-performance, responsive websites using the latest technologies like React and Node.js.')">
+                      Learn More
+                    </button>
+                </div>
+                <div class="service-card" data-category="ai">
+                    <i class="fa-solid fa-gears"></i>
+                    <h4>AI</h4>
+                    <p>Strategy, audits and guidance to improve your technology roadmap.</p>
+                    <button onclick="openService('AI', 'We build high-performance, responsive websites using the latest technologies like React and Node.js.')">
+                      Learn More
+                    </button>
+                </div>
+                <div class="service-card" data-category="design">
+                    <i class="fa-solid fa-paint-brush"></i>
+                    <h4>UI/UX Design</h4>
+                    <p>Modern responsive websites and web apps build with best practices</p>
+                    <button onclick="openService('UI/UX Design', 'We build high-performance, responsive websites using the latest technologies like React and Node.js.')">
+                      Learn More
+                    </button>
+                </div>
+                <div class="service-card" data-category="analytics">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h4>Data Analytic</h4>
+                    <p>Modern responsive websites and web apps build with best practices</p>
+                    <button onclick="openService('Data Analytic', 'We build high-performance, responsive websites using the latest technologies like React and Node.js.')">
+                      Learn More
+                    </button>
+                </div>
+                <div class="service-card" data-category="security">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h4>Cyber Security</h4>
+                    <p>Modern responsive websites and web apps build with best practices</p>
+                    <button onclick="openService('Cyber Security', 'We build high-performance, responsive websites using the latest technologies like React and Node.js.')">
+                      Learn More
+                    </button>
+                </div>
+                <div class="service-card" data-category="language">
+                    <i class="fa-brands fa-python"></i>
+                    <h4>Learn Python</h4>
+                    <p>Modern responsive websites and web apps build with best practices</p>
+                    <button onclick="openService('Learn Python', 'We build high-performance, responsive websites using the latest technologies like React and Node.js.')">
+                      Learn More
+                    </button>
+                </div>
+                <div class="service-card" data-category="language">
+                    <i class="fa-brands fa-java"></i>
+                    <h4>Learn Java</h4>
+                    <p>Modern responsive websites and web apps build with best practices</p>
+                    <button onclick="openService('Learn Java', 'We build high-performance, responsive websites using the latest technologies like React and Node.js.')">
+                      Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- STATS COUNTERS -->
+
+  <section class="stats-bar">
+    <div class="stat-item">
+      <div class="stat-number" data-target="150">0</div>
+      <div class="stat-label">Completed Project</div>
+    </div>
+
+    <div class="stat-item">
+      <div class="stat-number" data-target="80">0</div>
+      <div class="stat-label">Happy Clients</div>
+    </div>
+
+    <div class="stat-item">
+      <div class="stat-number" data-target="12">0</div>
+      <div class="stat-label">Year Experience</div>
+    </div>
+
+    <div class="stat-item">
+      <div class="stat-number" data-target="95">0</div>
+      <div class="stat-label">Job Placement Rate</div>
+    </div>
+  </section> 
+<!-- Service Model -->
+  <div id="serviceModal" class="service-modal">
+    <div class="service-modal-content">
+      <span class="service-close" id="closeModal">&times;</span>
+      <div class="modal-body">
+        <h2 id="service-title">Service Name</h2>
+        <hr> <p id="service-desc">Detailed description goes here...</p>
+        <button class="cta-btn" id="modalBtn">Enquire Now</button>
+      </div>
+    </div>
+  </div>
+
+<!-- Footer -->
+ 
+<footer class="main-footer">
+  <div class="container footer-grid">
+    
+    <div class="footer-col">
+      <h3 class="footer-logo">TechNova</h3>
+      <p>Empowering the next generation of IT professionals with cutting-edge courses and hands-on training.</p>
+      <div class="social-links">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="About1.html">About Us</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact Info</h4>
+      <div class="contact-item">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>Govt. Graduate College, Sahiwal</span>
+      </div>
+      <div class="contact-item">
+        <i class="fa-solid fa-phone"></i>
+        <span>+92 301 4823746</span>
+      </div>
+      <div class="contact-item">
+        <i class="fa-solid fa-envelope"></i>
+        <span>ali@ggcs.edu.pk</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 TechNova. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="../JS/services-only.js"></script>
+</body>
+</html>
