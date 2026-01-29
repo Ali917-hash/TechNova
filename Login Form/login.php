@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($row = mysqli_fetch_assoc($result)) {
         if (password_verify($password, $row['password'])) {
             $_SESSION['user_name'] = $row['first_name'];
-            echo "<script>alert('Login Successful!'); window.location.href='../index.html';</script>";
+            echo "<script>alert('GitHub does not supported Backend or Database!'); window.location.href='../index.html';</script>";
         } else {
             echo "<script>alert('Wrong Password'); window.location.href='Login.html';</script>";
         }
