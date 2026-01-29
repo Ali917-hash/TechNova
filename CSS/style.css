@@ -401,6 +401,7 @@
   color: #cbd5e1;
   text-decoration: none;
   transition: 0.3s;
+  padding: 0;
 }
 
 .footer-col ul li a:hover {

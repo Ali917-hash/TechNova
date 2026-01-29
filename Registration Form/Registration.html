@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="Registration.css">
+</head>
+<body>
+    <div class="container">
+        <form class="registration-form" id="registrationForm" action="register.php" method="POST">
+            <h2>Registration Form</h2>
+
+            <div class="input-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="First Name" required />
+            </div>
+
+            <div class="input-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Last Name" required />
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required />
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required />
+            </div>
+
+            <div class="input-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" placeholder="Confirm your password" required />
+            </div>
+
+            <div class="input-group">
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required />
+            </div>
+
+            <button type="submit" class="btn">Register</button>
+    
+            <p class="footer-text">
+                Already have an account? <a href="../Login Form/Login.html">Login Here</a>
+            </p>
+        </form>
+    </div>
+
+    <script src="registration.js"></script>
+</body>
+</html>
