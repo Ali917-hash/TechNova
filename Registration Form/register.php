@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 VALUES ('$fname', '$lname', '$email', '$password', '$gender', '$dob')";
         
         if (mysqli_query($conn, $sql)) {
-            echo "<script>alert('Registration Successful!'); window.location.href='../Login Form/Login.html';</script>";
+            echo "<script>alert('GitHub does not Supported Backend or Database!'); window.location.href='../Login Form/Login.html';</script>";
         } else {
             echo "Error: " . mysqli_error($conn);
         }
