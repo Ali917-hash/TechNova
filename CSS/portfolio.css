@@ -95,6 +95,7 @@ nav a.active {
 }
 
 .cta-btn {
+  display: block;
   background:var(--primary); 
   color:white; 
   padding:10px 14px; 
@@ -133,7 +134,8 @@ nav a.active {
   font-weight: bold;
   margin:0 0 18px;
   line-height:1.05;
-  letter-spacing:0.6px
+  letter-spacing:0.6px;
+  text-align: left;
 }
 .hero span {
   color: var(--primary-blue);
@@ -141,7 +143,8 @@ nav a.active {
 .hero p {
   margin:0 0 22px;
   color:rgba(255,255,255,0.85);
-  font-size:16px
+  font-size:16px;
+  text-align: left;
 }
 
 .hero .hero-cta {
@@ -263,6 +266,7 @@ nav ul {
   }
   
   .hero .hero-cta {
+    display: block;
     justify-content: center;
   }
 

@@ -105,7 +105,7 @@
 
     /* HERO */
     .hero{
-      background-image: linear-gradient(rgba(4,12,20,0.55), rgba(4,12,20,0.55)), url('../Assets/home.jpg'); 
+      background-image: linear-gradient(rgba(4,12,20,0.55), rgba(4,12,20,0.55)), url('../Assets/hero5.jpg'); 
       background-size:cover;
       background-position:center right;
       color:white;
