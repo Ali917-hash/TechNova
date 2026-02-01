@@ -522,7 +522,10 @@ hr {
   }
 }
 
-/* Mobile Menu Button */
+/* ========================
+     Mobile Menu Button  
+   ======================== */
+
 @media (max-width: 768px) {
     nav ul {
     display: none; 
@@ -530,7 +533,7 @@ hr {
     position: absolute;
     top: 100%; /* Push below header */
     left: 0;
-    width: 100%;
+    width: 80%;
     background: var(--white);
     padding: 10px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
@@ -553,8 +556,7 @@ hr {
     flex-direction: column;
     position: absolute;
     top: 70px;
-    right: 0;
-    width: 100%;
+    width: 80%;
     background: white;
     padding: 20px;
     border-radius: 0 0 10px 10px;
