@@ -61,6 +61,7 @@
     }
 
     .brand .logo {
+      font-family: 'Poppins', sans-serif;
       width: 40px;
       height: 40px;
       background: var(--primary);
@@ -105,7 +106,7 @@
 
     /* HERO */
     .hero{
-      background-image: linear-gradient(rgba(4,12,20,0.55), rgba(4,12,20,0.55)), url('../Assets/hero5.jpg');
+      background-image: linear-gradient(rgba(4,12,20,0.55), rgba(4,12,20,0.55)), url('../Assets/Home.png');
       background-size:cover;
       background-position:center right;
       color:white;
@@ -401,7 +402,6 @@
   color: #cbd5e1;
   text-decoration: none;
   transition: 0.3s;
-  padding: 0;
 }
 
 .footer-col ul li a:hover {
@@ -448,16 +448,17 @@
 
 /* --- Responsive Adjustments --- */
 
+/* Tablet */
 @media (max-width: 992px) {
   .footer-grid {
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr; /* 2 columns */
   }
 }
 
 /* Mobile */
 @media (max-width: 768px) {
-   .footer-grid {
-    grid-template-columns: 1fr; 
+  .footer-grid {
+    grid-template-columns: 1fr; /* Stack all columns */
     text-align: center;
   }
   
