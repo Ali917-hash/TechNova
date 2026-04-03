@@ -141,7 +141,7 @@ nav a:hover, nav a.active {
         display:flex;
         align-items:center;
         gap:32px;
-        min-height:400px;
+        min-height:450px;
         position: relative;
         z-index: 1;
         animation: fadeInUp 1s ease-out;
