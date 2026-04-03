@@ -46,9 +46,6 @@
       justify-content:space-between;
       gap:20px;
       padding:14px 0;
-      position: fixed;
-      position: sticky;
-      top: 0;
     }
 
     .brand {
@@ -60,32 +57,39 @@
         color:var(--dark)
     }
 
-    .brand .logo {
-      font-family: 'Exo 2', sans-serif;
-      width: 50px;
-      height: 50px;
-      background: var(--primary);
-      border-radius: 6px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-weight: 700;
-      box-shadow: 0 4px 10px rgba(30,123,230,0.15);
-    }
+.brand .logo {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--primary) 0%, #6238f8 100%);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 800;
+  font-size: 18px;
+  box-shadow: 0 6px 15px rgba(30,123,230,0.25);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
 
-    nav ul {
-        list-style:none;
-        margin:0;
-        padding:0;
-        display:flex;
-        gap:18px;
-        align-items:center
-    }
+.brand .logo:hover {
+  transform: scale(1.05);
+}
+
+nav ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+
     nav a {
         color:var(--dark);
         text-decoration:none;
-        font-weight:500
+        font-weight:600
     }
     nav a.active { 
       color: #6238f8; 
@@ -107,10 +111,10 @@
     /* HERO */
     .hero{
       background-image: linear-gradient(rgba(4,12,20,0.6), rgba(4,12,20,0.6)), url('../Assets/Home.png');
-      background-size:cover;
-      background-position:center right;
+      background-size: cover;
+      background-position: center right;
       color:white;
-      height: 100%;
+      min-height: 100vh;
       padding:72px 0 80px;
       position: relative;
       overflow: hidden;
