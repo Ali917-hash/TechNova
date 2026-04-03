@@ -123,20 +123,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const modalTitle = document.getElementById('modal-title') || document.getElementById('service-title');
   const modalDesc = document.getElementById('modal-desc') || document.getElementById('service-desc');
 
-  // Card click opens modal
-  const cards = document.querySelectorAll('.service-card');
-  cards.forEach(card => {
-    card.addEventListener('click', () => {
-      const titleElement = card.querySelector('h3') || card.querySelector('h4');
-      const descElement = card.querySelector('p');
-      if (modal && modalTitle && modalDesc && titleElement && descElement) {
-        modalTitle.innerText = titleElement.innerText;
-        modalDesc.innerText = descElement.innerText;
-        modal.style.display = 'flex';
-      }
-    });
-  });
-
   if (closeBtn && modal) {
     closeBtn.addEventListener('click', () => modal.style.display = 'none');
     window.addEventListener('click', (e) => { if (e.target === modal) modal.style.display = 'none'; });

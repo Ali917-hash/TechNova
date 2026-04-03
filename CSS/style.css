@@ -61,9 +61,9 @@
     }
 
     .brand .logo {
-      font-family: 'Poppins', sans-serif;
-      width: 40px;
-      height: 40px;
+      font-family: 'Exo 2', sans-serif;
+      width: 50px;
+      height: 50px;
       background: var(--primary);
       border-radius: 6px;
       display: inline-flex;
@@ -106,50 +106,112 @@
 
     /* HERO */
     .hero{
-      background-image: linear-gradient(rgba(4,12,20,0.55), rgba(4,12,20,0.55)), url('../Assets/Home.png');
+      background-image: linear-gradient(rgba(4,12,20,0.6), rgba(4,12,20,0.6)), url('../Assets/Home.png');
       background-size:cover;
       background-position:center right;
       color:white;
       height: 100%;
       padding:72px 0 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, rgba(30,123,230,0.1) 0%, rgba(98,56,248,0.1) 100%);
+      pointer-events: none;
     }
 
     .hero .hero-inner {
         display:flex;
         align-items:center;
         gap:32px;
-        min-height:400px
+        min-height:400px;
+        position: relative;
+        z-index: 1;
+        animation: fadeInUp 1s ease-out;
     }
 
     .hero h1 {
-        font-size:44px;
-        font-weight: bold;
+        font-size:48px;
+        font-weight: 800;
         margin:0 0 18px;
         line-height:1.05;
-        letter-spacing:0.6px
+        letter-spacing:0.6px;
+        text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        animation: fadeInUp 1s ease-out 0.2s both;
     }
+
     .hero span {
-      color: var(--primary);
+      background: linear-gradient(135deg, #1e7be6 0%, #6238f8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 900;
     }
+
     .hero p {
         margin:0 0 22px;
-        color:rgba(255,255,255,0.85);
-        font-size:16px
+        color:rgba(255,255,255,0.9);
+        font-size:18px;
+        line-height: 1.6;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        animation: fadeInUp 1s ease-out 0.4s both;
     }
 
     .hero .hero-cta {
         display:flex;
         gap:12px;
-        align-items:center
+        align-items:center;
+        animation: fadeInUp 1s ease-out 0.6s both;
     }
-    .hero .hero-cta .btn {
-        background:var(--primary);
+
+    .hero .hero-cta .cta-btn {
+        background: linear-gradient(135deg, var(--primary) 0%, #6238f8 100%);
         color:white;
-        padding:12px 20px;
-        border-radius:8px;
+        padding:14px 28px;
+        border-radius:10px;
         text-decoration:none;
         font-weight:600;
-        box-shadow: 0 6px 18px rgba(30,123,230,0.12);
+        box-shadow: 0 8px 20px rgba(30,123,230,0.3);
+        transition: all 0.3s ease;
+        font-size: 16px;
+    }
+
+    .hero .hero-cta .cta-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 30px rgba(30,123,230,0.4);
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive for Hero */
+    @media (max-width: 768px) {
+      .hero .hero-inner {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+      }
+      .hero h1 {
+        font-size: 36px;
+      }
+      .hero p {
+        font-size: 16px;
+      }
     }
 
 /* --- Base Styles --- */
@@ -383,6 +445,7 @@
   color: #fff;
   margin-bottom: 25px;
   font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .footer-col p {
@@ -392,6 +455,7 @@
 
 .footer-col ul {
   list-style: none;
+  padding-left: 1px;
 }
 
 .footer-col ul li {
