@@ -3,24 +3,25 @@ Reset some default setting
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-    background: linear-gradient(135deg, #8b97db, #624d80);
-    /* background: magenta; */
+    background: radial-gradient(circle at top, #1A1F3A, #0A0F1C);
     display: flex; 
-    height: 110vh;
+    height: 120vh;
     align-items: center;
     justify-content: center;
 }
 
 /* Main Container */
 .container {
-    background: #f3e9e9;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    border: 1px solid #00F5FF;
     width: 400px;
     padding: 30px;
-    border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     animation: fadeIn 1s ease-in-out; 
     align-items: center;
@@ -29,8 +30,12 @@ body {
 
 .registration-form h2 {
     text-align: center;
-    margin-bottom: 20px;
-    color: #4f48b9;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    font-size: 32px;
+    background: linear-gradient(90deg, #00F5FF, #8A2BE2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .input-group {
@@ -39,55 +44,64 @@ body {
 
 .input-group label {
     display: block;
-    font-weight: 600px;
-    margin-bottom: 3px;
-    color: #555;
+    font-weight: 700px;
+    margin-bottom: 5px;
+    background: linear-gradient(90deg, #00F5FF, #8A2BE2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .input-group input,
 .input-group select {
-    width: 100%;
+    width: 95%;
     padding: 10px;
-    border: 2px solid #ddd;
     border-radius: 10px;
     outline: none; 
     transition: all 0.3s ease;
-
+    color: #EAF2FF;
+    border: 1px solid rgba(0, 245, 255, 0.3);
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(5px);
 }
 
 .input-group input:focus,
 .input-group select:focus {
-    border-color: #6e8efb;
-    box-shadow: 0 0 5px rgba(110, 142, 251, 0.5);
+    border: 1px solid #00F5FF;
+    box-shadow: 0 0 8px #00F5FF;
 }
 
 .btn {
     width: 100%;
     padding: 12px;
-    background: linear-gradient(135deg, #6e8efb, #a777e3);
     border: none;
-    color: white;
     font-size: 16px;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
+    background: linear-gradient(90deg, #00F5FF, #8A2BE2);
+    color: white;
+    backdrop-filter: blur(6px);
 }
 
 .btn:hover {
-    background: linear-gradient(135deg, #5b75e8, #9166d2);
     transform: translateY(-2px);
+    background: #8A2BE2;
+    box-shadow: 0 0 15px #8A2BE2, 0 0 30px #8A2BE2;
 }
 
 .footer-text {
     text-align: center;
     margin-top: 15px;
     font-size: 14px;
+    color: white;
 }
 
 .footer-text a {
     color: #6e8efb;
     text-decoration: none;
     font-weight: bold;
+    font-size: 20px;
+    margin-left: 10px;
 }
 
 .footer-text a:hover {
