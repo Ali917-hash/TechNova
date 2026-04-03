@@ -75,7 +75,6 @@ body {
   cursor: pointer;
   transition: 0.3s;
   text-decoration: none;
-
   background: linear-gradient(90deg, #00F5FF, #8A2BE2);
   color: white;
   backdrop-filter: blur(6px);

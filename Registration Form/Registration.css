@@ -45,6 +45,7 @@ body {
 .input-group label {
     display: block;
     font-weight: 700px;
+    font-weight: bold;
     margin-bottom: 5px;
     background: linear-gradient(90deg, #00F5FF, #8A2BE2);
     -webkit-background-clip: text;
@@ -100,8 +101,8 @@ body {
     color: #6e8efb;
     text-decoration: none;
     font-weight: bold;
-    font-size: 20px;
-    margin-left: 10px;
+    font-size: 15px;
+    margin-left: 5px;
 }
 
 .footer-text a:hover {
