@@ -244,6 +244,13 @@ nav a.active {
 
 /* Responsive for Hero */
 @media (max-width: 768px) {
+  .hero {
+        background-image: linear-gradient(rgba(4,12,20,0.6)), url('../Assets/Mob_portfolio.png');
+        background-position: top;
+        background-size: cover;
+        min-height: 110vh;
+        padding: 80px 0 60px;
+      }
   .hero .hero-inner {
     flex-direction: column;
     text-align: center;
@@ -295,6 +302,9 @@ nav a.active {
   }
   nav ul.active {
     display: flex;
+  }
+  .cta-btn { 
+    display: none; 
   }
 }
 
