@@ -121,7 +121,7 @@ nav a.active {
    ======================= */
 
 .hero{
-  background-image: linear-gradient(rgba(4,12,20,0.6), rgba(4,12,20,0.6)), url('../Assets/Portfolioo.png'); 
+  background-image: linear-gradient(rgba(4,12,20,0.6), rgba(4,12,20,0.6)), url('../Assets/Portfolioo.webp'); 
   background-size:cover;
   background-position:center right;
   color:white;
@@ -245,7 +245,7 @@ nav a.active {
 /* Responsive for Hero */
 @media (max-width: 768px) {
   .hero {
-        background-image: linear-gradient(rgba(4,12,20,0.6)), url('../Assets/Mob_portfolio.png');
+        background-image: linear-gradient(rgba(4,12,20,0.6)), url('../Assets/Mob_portfolio.webp');
         background-position: top;
         background-size: cover;
         min-height: 110vh;

@@ -110,7 +110,7 @@ nav ul {
 
     /* HERO */
     .hero{
-      background-image: linear-gradient(rgba(4,12,20,0.6), rgba(4,12,20,0.6)), url('../Assets/Home.png');
+      background-image: linear-gradient(rgba(4,12,20,0.6), rgba(4,12,20,0.6)), url('../Assets/Home.webp');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -209,7 +209,7 @@ nav ul {
     /* Responsive for Hero */
     @media (max-width: 768px) {
       .hero {
-        background-image: linear-gradient(rgba(4,12,20,0.6)), url('../Assets/Mob_home.png');
+        background-image: linear-gradient(rgba(4,12,20,0.6)), url('../Assets/Mob_home.webp');
         background-position: top;
         background-size: cover;
         min-height: 110vh;

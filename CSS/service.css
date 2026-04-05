@@ -118,7 +118,7 @@ header {
    ============================ */
 
     .hero{
-      background-image: linear-gradient(rgba(4,12,20,0.6), rgba(4,12,20,0.6)), url('../Assets/Service.png'); 
+      background-image: linear-gradient(rgba(4,12,20,0.6), rgba(4,12,20,0.6)), url('../Assets/Service.webp'); 
       background-size:cover;
       background-position:center right;
       color:white;
@@ -212,7 +212,7 @@ header {
     /* Responsive for Hero */
     @media (max-width: 768px) {
       .hero {
-        background-image: linear-gradient(rgba(4,12,20,0.6)), url('../Assets/Mob_services.png');
+        background-image: linear-gradient(rgba(4,12,20,0.6)), url('../Assets/Mob_services.webp');
         background-position: top;
         background-size: cover;
         min-height: 110vh;

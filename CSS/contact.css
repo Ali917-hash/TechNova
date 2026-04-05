@@ -110,7 +110,7 @@
 
     /* HERO */
     .hero{
-      background-image: linear-gradient(rgba(4,12,20,0.6), rgba(4,12,20,0.6)), url('../Assets/Contact_Us.png');
+      background-image: linear-gradient(rgba(4,12,20,0.6), rgba(4,12,20,0.6)), url('../Assets/Contact_Us.webp');
       background-size:cover;
       background-position:center right;
       color:white;
@@ -203,7 +203,7 @@
     /* Responsive for Hero */
     @media (max-width: 768px) {
       .hero {
-        background-image: linear-gradient(rgba(4,12,20,0.6)), url('../Assets/Mob_contact.png');
+        background-image: linear-gradient(rgba(4,12,20,0.6)), url('../Assets/Mob_contact.webp');
         background-position: top;
         background-size: cover;
         min-height: 110vh;
